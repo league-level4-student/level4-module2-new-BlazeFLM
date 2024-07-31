@@ -5,6 +5,7 @@ package _01_Generics_Vs_Object;
  *  
  *  This allows us to create a list of any object(String, Integer, Double, 
  *  Robot, etc).
+ *  
  */
 
 @SuppressWarnings("unchecked")
