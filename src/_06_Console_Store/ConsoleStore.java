@@ -37,6 +37,9 @@ public class ConsoleStore {
      */
 
     public static void main(String[] args) {
+    	Cart<Cereal> c = new Cart<Cereal>();
+    	c.add(new Cereal());
+    	c.showCart();
     	
     }
 

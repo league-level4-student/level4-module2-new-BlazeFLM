@@ -7,13 +7,9 @@ import javax.swing.JLabel;
 public class Toiletries extends NonFood {
 
 	public Toiletries() {
-		if(new Random().nextBoolean()) {
-			this.item = "toiletries1.jpeg";
-		}
-		else {
-			this.item = "toiletries2.jpeg";
-		}
 		
+		boolean x = new Random().nextBoolean();
+		this.item = x ? "toiletries1.jpeg" : "toiletries2.jpeg";
 		price = 15;
 	}
 	@Override

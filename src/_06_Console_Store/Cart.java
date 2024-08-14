@@ -14,7 +14,7 @@ import javax.swing.JPanel;
 @SuppressWarnings("unchecked")
 public class Cart<T> {
     private T[] cart;
-
+    
     public Cart() {
         cart = (T[]) new Object[5];
     }

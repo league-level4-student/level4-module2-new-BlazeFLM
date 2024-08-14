@@ -6,12 +6,9 @@ import javax.swing.JLabel;
 
 public class Toy extends NonFood {
 	public Toy() {
-		if(new Random().nextBoolean()) {
-			this.item = "toy1.jpeg";
-		}
-		else {
-			this.item = "toy2.jpeg";
-		}
+		
+		boolean x = new Random().nextBoolean();
+		this.item = x ? "toy1.jpeg" : "toy2.jpeg";
 		price = 25;
 	}
 
