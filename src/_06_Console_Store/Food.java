@@ -6,7 +6,7 @@ import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-public abstract class Food {
+public abstract class Food implements PricedItem{
     String item;
     int price;
 

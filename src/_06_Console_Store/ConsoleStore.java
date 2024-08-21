@@ -40,7 +40,7 @@ public class ConsoleStore {
     	Cart<Cereal> c = new Cart<Cereal>();
     	c.add(new Cereal());
     	c.showCart();
-    	
+    	c.showMoney();
     }
 
 }

@@ -12,11 +12,13 @@ import javax.swing.JPanel;
  */
 
 @SuppressWarnings("unchecked")
-public class Cart<T> {
+public class Cart<T extends PricedItem> {
     private T[] cart;
+    int money;
     
     public Cart() {
-        cart = (T[]) new Object[5];
+        cart = (T[]) new PricedItem[5];
+        money = 100;
     }
 
     // Adds an item to the cart
@@ -24,11 +26,13 @@ public class Cart<T> {
         for (int i = 0; i < cart.length; i++) {
             if (cart[i] == null) {
                 cart[i] = item;
+                money -= item.getPrice();
                 return;
             }
         }
         JOptionPane.showMessageDialog(null,
                 "Your cart is full!\nNo more than 5 items");
+        
     }
 
     // Displays everything currently in the cart
@@ -54,5 +58,9 @@ public class Cart<T> {
 
     public int length() {
         return cart.length;
+    }
+    
+    public void showMoney() {
+    	System.out.println(money);
     }
 }
